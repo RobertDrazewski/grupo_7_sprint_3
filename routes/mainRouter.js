@@ -4,7 +4,7 @@ const mainController= require('../controllers/mainController');
 
 //home
 
-router.get('/index',mainController.index)
+router.get('/',mainController.index)
 
 //Carrito
 
