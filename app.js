@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path')
 const app = express();
-const port = process.env.PORT || 3000;
+
 
 const mainRouter =require('./routes/mainRouter');
 
@@ -18,5 +18,5 @@ app.set('view engine','ejs');
 
 app.set('views','views');
 
-
-app.listen(port,()=>console.log("servidor corriemdo en el puerto "+port));
+const port = process.env.PORT || 3000;
+app.listen(port, ()=> console.log(`Servidor corriendo en el puerto ${port}`))
