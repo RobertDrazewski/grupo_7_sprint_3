@@ -13,7 +13,7 @@
     --green: #39b54a;
   }
 .bodyClass{
-    background-color: rgb(178, 212, 235);
+    background-color: rgb(178, 212, 235);/*IMPORTANTE sería la parte del body comín a todos*/
 }
 
 /*enlace AGREGAR PRODUCTOS*/

@@ -1,4 +1,5 @@
 const path = require('path');
+const products = require("../public/js/listadoCompras")
 const mainController = {
 
 
@@ -6,7 +7,7 @@ index: (req,res)=>{
     res.render('index')
 },
 productCart: (req,res)=>{
-    res.render('productCart')
+    return res.render('productCart', {"producto": products})
 },
 register: (req,res)=>{
     res.render('register')

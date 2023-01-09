@@ -4,15 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('./partials/head') %>
+    <link rel="stylesheet" href="/css/productCart.css">
     <title>Carrito</title>
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/styleCarrito.css">
 </head>
 <body class="bodyClass">
-
     <%- include('./partials/header') %>
-
     <main class="main-container">
         <div class="main-top">
             <!-- <h2 class="subtitulo">Carrito de compras</h2> -->
@@ -23,159 +20,10 @@
            </div>
         </div>
         <section class="main-carrito">
-            <article class="productos-en-carrito">
-                <div class="producto">
-                    <div class="box-product">
-                        <img src="/img/calles-de-salta.jpg" class="img-product">
-                        <div class="descripcion-producto">
-                            <div class="bajarLinea"> 
-                                <h2 class="product-name">Salta</h2>
-                                <p class="dias">5 dias <span class="precio">$14.977</span> </p></div>
-                                <p class="ofertas">20% OFF</p>                              
-                            <div class="fechaIdaVuelta">
-                                <p class="salida">Ida <span class="fechaViaje"><i class="fa-sharp fa-solid fa-plane-departure"></i>28-12-22</span></p>
-                                <p class="vuelta">Vuelta <span class="fechaViaje"><i class="fa-solid fa-plane-arrival"></i>05-01-23</span></p>
-                            </div>
-                            <h3 class="hospedaje"><i class="fa-solid fa-square-h"></i>Hospedaje</h3>
-                            <p class="comentario">Hotel del sol</p> <!--esta clase 2ble es para poner un formato de titulo apurado-->
-                            <h3 class="hospedaje ">Alquiler de vehiculo</h3>
-                            <p class="alqAuto comentario">Corsa cuatro puertas familiar</p>
-                            <ul class="excursionList">
-                                <h3 class="hospedaje">Excursiones incluidas</h3>
-                                <li class="elementoExcursion">Día completo a Salinas Grandes, Purmamarca con senderismo</li>
-                                <li class="elementoExcursion">San antonio de los cobres, ruta del tren a las nubes</li>
-                            </ul><!--Hacerlo 2-->
-                            <!-- <div class="cantidad-producto">
-                                <label class="selector" for="cantidad-vuelos">Personas: </label>
-                                <select class="selcetor-cantidad" name="cantidad-vuelos" id="cantidad-vuelos">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                </select>
-                            </div> -->
-                            <button class="product-remove">
-                                <i class="fa-solid fa-trash"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article class="productos-en-carrito">
-                <div class="producto">
-                    <div class="box-product">
-                        <img src="/img/bariloche-otoño.jpg" class="img-product">
-                        <div class="descripcion-producto">
-                            <div class="bajarLinea"> 
-                                <h2 class="product-name">Bariloche</h2>
-                                <p class="dias">6 dias <span class="precio">$14.977</span> </p></div>
-                                <p class="ofertas">10% OFF</p>                              
-                            <div class="fechaIdaVuelta">
-                                <p class="salida">Ida <span class="fechaViaje"><i class="fa-sharp fa-solid fa-plane-departure"></i>05-04-23</span></p>
-                                <p class="vuelta">Vuelta <span class="fechaViaje"><i class="fa-solid fa-plane-arrival"></i>11-04-23</span></p>
-                            </div>
-                            <h3 class="hospedaje"><i class="fa-solid fa-square-h"></i>Hospedaje</h3>
-                            <p class="comentario">Apart Holtel</p> <!--esta clase 2ble es para poner un formato de titulo apurado-->
-                            <h3 class="hospedaje ">Alquiler de vehiculo</h3>
-                            <p class="alqAuto comentario">Servicio de combi</p>
-                            <ul class="excursionList">
-                                <h3 class="hospedaje">Excursiones incluidas</h3>
-                                <li class="elementoExcursion">Tarde en Cerro Catedral</li>
-                                <li class="elementoExcursion">Travesia 4 x 4 </li>
-                            </ul><!--Hacerlo 2-->
-                            <!-- <div class="cantidad-producto"> // PREGUNTAR Y SE VA ANTES DE ENTREGAR
-                                <label class="selector" for="cantidad-vuelos">Personas: </label>
-                                <select class="selcetor-cantidad" name="cantidad-vuelos" id="cantidad-vuelos">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                </select>
-                            </div> -->
-                            <button class="product-remove">
-                                <i class="fa-solid fa-trash"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article class="productos-en-carrito">
-                <div class="producto">
-                    <div class="box-product">
-                        <img src="/img/cumbresita.jpg" class="img-product">
-                        <div class="descripcion-producto">
-                            <div class="bajarLinea"> 
-                                <h2 class="product-name">Córdoba</h2>
-                                <p class="dias">7 dias <span class="precio">$14.977</span> </p></div>
-                                <p class="ofertas">15% OFF</p>                              
-                            <div class="fechaIdaVuelta">
-                                <p class="salida">Ida <span class="fechaViaje"><i class="fa-sharp fa-solid fa-plane-departure"></i>10-10-23</span></p>
-                                <p class="vuelta">Vuelta <span class="fechaViaje"><i class="fa-solid fa-plane-arrival"></i>17-10-23</span></p>
-                            </div>
-                            <h3 class="hospedaje"><i class="fa-solid fa-square-h"></i>Hospedaje</h3>
-                            <p class="comentario">Morada Hostel</p> <!--esta clase 2ble es para poner un formato de titulo apurado-->
-                            <h3 class="hospedaje ">Alquiler de vehiculo</h3>
-                            <p class="alqAuto comentario">Servicio de combi</p>
-                            <ul class="excursionList">
-                                <h3 class="hospedaje">Excursiones incluidas</h3>
-                                <li class="elementoExcursion">Encuentro de DJ's la Fabrica</li>
-                                <li class="elementoExcursion">Día completo en Cosquin</li>
-                            </ul><!--Hacerlo 2-->
-                            <!-- <div class="cantidad-producto">
-                                <label class="selector" for="cantidad-vuelos">Personas: </label>
-                                <select class="selcetor-cantidad" name="cantidad-vuelos" id="cantidad-vuelos">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                </select>
-                            </div> -->
-                            <button class="product-remove">
-                                <i class="fa-solid fa-trash"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article class="productos-en-carrito">
-                <div class="producto">
-                    <div class="box-product">
-                        <img src="/img/obelisco.png" class="img-product">
-                        <div class="descripcion-producto">
-                            <div class="bajarLinea"> 
-                                <h2 class="product-name">Buenos Aires</h2>
-                                <p class="dias">7 dias <span class="precio">$14.977</span> </p></div>
-                                <p class="ofertas">20% OFF</p>                              
-                            <div class="fechaIdaVuelta">
-                                <p class="salida">Ida <span class="fechaViaje"><i class="fa-sharp fa-solid fa-plane-departure"></i>10-10-23</span></p>
-                                <p class="vuelta">Vuelta <span class="fechaViaje"><i class="fa-solid fa-plane-arrival"></i>17-10-23</span></p>
-                            </div>
-                            <h3 class="hospedaje"><i class="fa-solid fa-square-h"></i>Hospedaje</h3>
-                            <p class="comentario">Hotel Chaman</p> <!--esta clase 2ble es para poner un formato de titulo apurado-->
-                            <h3 class="hospedaje ">Alquiler de vehiculo</h3>
-                            <p class="alqAuto comentario">clio 2 puertas</p>
-                            <ul class="excursionList">
-                                <h3 class="hospedaje">Excursiones incluidas</h3>
-                                <li class="elementoExcursion">Paseo por la Boca</li>
-                                <li class="elementoExcursion">Noche de tango</li>
-                            </ul><!--Hacerlo 2-->
-                            <!-- <div class="cantidad-producto">
-                                <label class="selector" for="cantidad-vuelos">Personas: </label>
-                                <select class="selcetor-cantidad" name="cantidad-vuelos" id="cantidad-vuelos">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                </select>
-                            </div> -->
-                            <button class="product-remove">
-                                <i class="fa-solid fa-trash"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </article>
+            <%- include('tarjetaDeCompra') %>
         </section>
         <div class="main-bottom">
             <div class="medio-de-pago">
-                <!-- <label for="tipo-de-pago">Seleccione medio de pago</label> //PREGUNTAR Y SE VA ANTES DE LA ENTREGA
-                <select name="tipo-de-pago" id="tipo-de-pago">
-                    <option value="tarjeta-visa">Tarjeta VISA</option>
-                    <option value="tarjeta-naranja">Tarjeta NARANJA</option>
-                    <option value="otro-medio-de-pago">Otra</option>
-                </select> -->
                 <p class="total-precio"> <b>Total:</b> <span class="precio-total-muestra"><b>$13245</b></span></p>
             </div>
             <div class="limpiar-container">
@@ -185,7 +33,6 @@
         </div>
     </main>
 
-    <%- include('./partials/footer') %> 
-    
+    <%- include('./partials/footer') %>
 </body>
 </html>
